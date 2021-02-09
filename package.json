@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx lint --fix"
     }
   },
   "prettier": {
@@ -39,11 +39,11 @@
   "size-limit": [
     {
       "path": "dist/mixpanel-react.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "30 KB"
     },
     {
       "path": "dist/mixpanel-react.esm.js",
-      "limit": "10 KB"
+      "limit": "30 KB"
     }
   ],
   "devDependencies": {
