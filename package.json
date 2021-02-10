@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.1.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +24,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint --fix"
+      "pre-commit": "tsdx lint"
     }
   },
   "prettier": {
@@ -33,19 +33,23 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mixpanel-react",
+  "name": "mixpanel-react-v2",
   "author": "osas idemudia",
-  "module": "dist/mixpanel-react.esm.js",
+  "module": "dist/mixpanel-react-v2.esm.js",
   "size-limit": [
     {
-      "path": "dist/mixpanel-react.cjs.production.min.js",
+      "path": "dist/mixpanel-react-v2.cjs.production.min.js",
       "limit": "30 KB"
     },
     {
-      "path": "dist/mixpanel-react.esm.js",
+      "path": "dist/mixpanel-react-v2.esm.js",
       "limit": "30 KB"
     }
   ],
+  "dependencies": {
+    "@types/mixpanel-browser": "^2.35.4",
+    "mixpanel-browser": "2.14.0"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.9.2",
     "@types/react": "^17.0.1",
@@ -57,9 +61,6 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.1.0",
     "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "@types/mixpanel-browser": "^2.35.4",
-    "mixpanel-browser": "2.14.0"
   }
+ 
 }
